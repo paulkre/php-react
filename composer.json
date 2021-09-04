@@ -1,6 +1,6 @@
 {
   "name": "paulkre/react",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "React-like library for component based development in PHP",
   "type": "library",
   "license": "MIT",
