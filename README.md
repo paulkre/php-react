@@ -33,5 +33,21 @@ MyOtherComponent::render([
     new MyComponent(['msg' => 'Second child']),
   ]
 ]);
+```
 
+I recommend using [webpack](https://github.com/webpack/webpack) so you can colocate both back end and front end code of each component in the same directory.
+The structure for a generic project could look like this:
+
+```
+.
+└── src
+    ├── MyComponent
+    │   ├── Component.php
+    │   ├── index.js
+    │   └── style.css
+    ├── MyOtherComponent
+    │   ├── Component.php
+    │   ├── index.js
+    │   └── style.css
+    └── index.js
 ```
