@@ -13,5 +13,25 @@ class MyComponent extends \React\Component {
   }
 }
 
-MyComponent::render(['msg' => 'Hello World!'])
+class MyOtherComponent extends \React\Component {
+  static function render($props = []) {
+    ?>
+    <div>
+      <?php self::render_children($props['children']) ?>
+    </div>
+    <?php
+  }
+}
+
+// Basic
+MyComponent::render(['msg' => 'Hello World!']);
+
+// Nested
+MyOtherComponent::render([
+  'children' => [
+    new MyComponent(['msg' => 'First child']),
+    new MyComponent(['msg' => 'Second child']),
+  ]
+]);
+
 ```
