@@ -35,7 +35,7 @@ MyOtherComponent::render([
 ]);
 ```
 
-I recommend using [webpack](https://github.com/webpack/webpack) so you can colocate both back end and front end code of each component in the same directory.
+I recommend using [webpack](https://github.com/webpack/webpack) so you can co-locate both the back end and the front end code of each component in the same directory.
 The structure for a generic project could look like this:
 
 ```
